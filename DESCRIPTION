@@ -1,18 +1,22 @@
 Package: fusen.golem.combo
 Title: Shiny Application For a 'fusen' and 'golem' Framework
 Version: 0.0.0.9000
-Authors@R: person('Sébastien', 'Rochette', email = 'sebastien@thinkr.fr', role = c('cre', 'aut'))
-Description: Show the potiential of combining 'fusen' tools with 'golem' framework.
+Authors@R: 
+    person("Sébastien", "Rochette", , "sebastien@thinkr.fr", role = c("cre", "aut"))
+Description: Show the potiential of combining 'fusen' tools with 'golem'
+    framework.
 License: MIT + file LICENSE
+URL: https://github.com/statnmap/fusen.golem.combo
+BugReports: https://github.com/statnmap/fusen.golem.combo/issues
 Imports: 
     config (>= 0.3.1),
     golem (>= 0.3.5.9001.0.0.0.1670517568),
     shiny (>= 1.7.3)
-Encoding: UTF-8
-LazyData: true
-RoxygenNote: 7.1.1
 Suggests: 
     spelling,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Encoding: UTF-8
 Language: en-US
+LazyData: true
+RoxygenNote: 7.2.2

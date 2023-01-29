@@ -11,12 +11,16 @@
 #### CURRENT FILE: DEV SCRIPT #####
 ###################################
 
+usethis::use_git_ignore(".Rhistory")
+usethis::use_build_ignore(".here")
 # Engineering
 
 ## Dependencies ----
 ## Amend DESCRIPTION with dependencies read from package code parsing
 ## install.packages('attachment') # if needed.
 attachment::att_amend_desc()
+# Check
+devtools::check()
 
 ## Add modules ----
 ## Create a module infrastructure in R/
@@ -70,16 +74,18 @@ usethis::use_github_action()
 usethis::use_github_action_check_release()
 usethis::use_github_action_check_standard()
 usethis::use_github_action_check_full()
+usethis::use_github_action("pkgdown") # To show documentation website
+usethis::use_github_action("test-coverage") # To set remote code coverage
 # Add action for PR
 usethis::use_github_action_pr_commands()
 
 # Travis CI
-usethis::use_travis()
-usethis::use_travis_badge()
+# usethis::use_travis()
+# usethis::use_travis_badge()
 
 # AppVeyor
-usethis::use_appveyor()
-usethis::use_appveyor_badge()
+# usethis::use_appveyor()
+# usethis::use_appveyor_badge()
 
 # Circle CI
 usethis::use_circleci()
@@ -89,7 +95,9 @@ usethis::use_circleci_badge()
 usethis::use_jenkins()
 
 # GitLab CI
-usethis::use_gitlab_ci()
+gitlabr::use_gitlab_ci()
+
+devtools::build_readme()
 
 # You're now set! ----
 # go to dev/03_deploy.R

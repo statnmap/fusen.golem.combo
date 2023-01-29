@@ -4,6 +4,10 @@
 # fusen.golem.combo
 
 <!-- badges: start -->
+
+[![Codecov test
+coverage](https://codecov.io/gh/statnmap/fusen.golem.combo/branch/main/graph/badge.svg)](https://app.codecov.io/gh/statnmap/fusen.golem.combo?branch=main)
+[![R-CMD-check](https://github.com/statnmap/fusen.golem.combo/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/statnmap/fusen.golem.combo/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of fusen.golem.combo is to …
