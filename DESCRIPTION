@@ -9,9 +9,9 @@ License: MIT + file LICENSE
 URL: https://github.com/statnmap/fusen.golem.combo
 BugReports: https://github.com/statnmap/fusen.golem.combo/issues
 Imports: 
-    config (>= 0.3.1),
-    golem (>= 0.3.5.9001.0.0.0.1670517568),
-    shiny (>= 1.7.3)
+    config,
+    golem,
+    shiny
 Suggests: 
     spelling,
     testthat (>= 3.0.0)
